@@ -1,31 +1,33 @@
+#include <iostream> 
 #include <string>
+using namespace std;
 
-class Player {
+class Player 
+{
+    private:
+        string prenom;
+        string nom;
+        int age;
+        float taille;
+        string gender;
+        string orientationS;
+        string secret_crush;
+    
     public:
         Player();
-        ~ Player();
+        ~Player();
 
-        std::string getPlayerLastName();
-        std::string getPlayerFirstName();
-        void setPlayerLastName(std::string newname);
-        void setPlayerFirstName(std::string newname);
+        string getPlayerLastName();
+        string getPlayerFirstName();
+        void setPlayerLastName(string newname);
+        void setPlayerFirstName(string newname);
         int getAge();
-        void setAge();
+        void setAge(int newage);
         float getTaille();
-        void setTaille();
+        void setTaille(float newtaille);
         std::string getGender();
-        void setGender();
+        void setGender(string genderset);
         std::string getOrientationS();
-        void setOrientationS();
-
-
-    private:
-    std::string prenom;
-    std::string nom;
-    int age;
-    float taille;
-    std::string gender;
-    std::string orientationS;
-    std::string secret_crush;
+        void setOrientationS(string neworientation);
 
 };
