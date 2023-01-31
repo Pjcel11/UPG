@@ -25,9 +25,9 @@ class Player
         void setAge(int newage);
         float getTaille();
         void setTaille(float newtaille);
-        std::string getGender();
+        string getGender();
         void setGender(string genderset);
-        std::string getOrientationS();
+        string getOrientationS();
         void setOrientationS(string neworientation);
 
 };

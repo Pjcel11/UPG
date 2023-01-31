@@ -21,58 +21,64 @@ using namespace std;
     Player::Player(){
         
         cout<<"Entrez votre prénom\n";
-        // string prenom;
-        cin >> prenom;
+        string prenom;
+        cin >> this->prenom;
     
         cout<<"Entrez votre nom" <<endl;
-        // string nom;
-        cin>>nom;
+        string nom;
+        cin>>this->nom;
 
         cout<<"Quel age avez vous ?"<<endl;    
-        cin>>age;
+        int age;
+        cin>>this->age;
 
         cout<<"taille ?"<<endl;
-        cin>>taille;
+        float taille;
+        cin>>this->taille;
+
+        string gender="male";
+        string orientationS="default";
     
-    };
- 
-    string getPlayerLastName(){
-        return nom;
+    }
+    Player::~Player(){};
+
+    string Player::getPlayerLastName(){
+        return this->nom;
     };
 
-    string getPlayerFirstName(){
-        return prenom;
+    string Player::getPlayerFirstName(){
+        return this->prenom ;
     };
-    void setPlayerLastName(string newname){
+    void Player::setPlayerLastName(string newname){
         nom=newname;
     };
-    void setPlayerFirstName(string newname){
+    void Player::setPlayerFirstName(string newname){
         prenom=newname;
     };
 
-    int getAge(){
+    int Player::getAge(){
         return age;
     };
 
-    void setAge(int newage){ age=newage;
+    void Player::setAge(int newage){ 
+        age=newage;
     };
-    float getTaille(){
+    float Player::getTaille(){
         return taille;
-    };
-    void setTaille(float newtaille){
+    }
+    void Player::setTaille(float newtaille){
         taille=newtaille;
     };
-    string getGender(){
+    string Player::getGender(){
         return gender;
     };
-    void setGender(string newgender){
+    void Player::setGender(string newgender){
         gender=newgender;
     };
-    string getOrientationS(){
+    string Player::getOrientationS(){
         return orientationS;
     };
-    void setOrientationS(string newO){
+    void Player::setOrientationS(string newO){
         orientationS=newO;
     };
-
 
