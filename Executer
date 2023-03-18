@@ -1,2 +1,6 @@
-g++ player.cpp main.cpp
+#!/bin/bash
+
+list=(`ls | grep .cpp`)
+echo $list
+g++ ./*.cpp 
 ./a.out

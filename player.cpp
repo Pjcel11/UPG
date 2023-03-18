@@ -40,6 +40,7 @@ using namespace std;
         string orientationS="default";
     
     }
+    
     Player::~Player(){};
 
     string Player::getPlayerLastName(){
