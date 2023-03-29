@@ -9,7 +9,7 @@ Carte::Carte () {
     this->couleur =0;
 }
 
-Carte::Carte(int valeur, int couleur){
+Carte::Carte(int couleur, int valeur){
     this->valeur = valeur;
     this->couleur = couleur;
 }
@@ -35,8 +35,8 @@ void Carte::setCouleur (int couleur) {
 void Carte::afficherCarte () {
     cout<<"Affichage en cours";
     //Constantes utiles
-    string val="erreur"; //Valeur de la carte en string
-    string coul="erreur"; //Couleur de la carte en string
+    string val="default"; //Valeur de la carte en string
+    string coul="default"; //Couleur de la carte en string
 
     int valcarte=this->valeur; // Valeur et Couleur de la carte pour le traitement conditionnel en dessous
     int coulcarte=this->couleur; //

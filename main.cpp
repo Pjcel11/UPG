@@ -14,11 +14,12 @@ int main() {
 	Deck52Cartes decktest = Deck52Cartes();
 	cout<<"Affichage du deck"<<endl;
 	decktest.afficherDeck();
+	
 	cout<<"Mélange du deck"<<endl;
 	decktest.melangerDeck();
 	cout<<"Affichage du deck mélangé"<<endl;
 	decktest.afficherDeck();
-
+	
 	
 	
 	//Player joueurtest;
